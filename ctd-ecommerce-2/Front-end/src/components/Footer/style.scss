@@ -1,0 +1,42 @@
+#footer {
+    .contato{
+        background-color: var(--surfie-green);
+    }
+    p{
+        margin-bottom: 0;
+        color: var(--green-dark);
+    }
+    .row {
+        padding: auto;
+    }
+    .justify-content-center {
+        justify-content:space-between;
+    }
+    .card-footer {
+        background-color: var(--regal-blue) !important;
+        color: var(--bg-2);
+    }
+    .card-body {
+        background-color: var(--matisse);
+        padding: 2rem;
+    }
+    .card-header {
+        background-color: var(--green-light);
+    }
+    
+
+    img, svg {
+        color: var(--valentino);
+        width: 2rem;
+        height: 2rem;
+        
+    }
+    a {
+        text-decoration: none;
+        color: var(--bg-2);
+    }
+    a:hover{
+        color: black;
+    }
+
+}

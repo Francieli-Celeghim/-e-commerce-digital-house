@@ -1,0 +1,206 @@
+body{
+  font-size: 10px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  
+}
+
+.cards {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  -ms-grid-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+  max-width: 1020px;
+  margin: 0 auto 3rem;
+}
+
+article {
+  position: relative;
+}
+
+.caixa {
+  height: 50rem;
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+
+.image-container-about{
+  top: 30rem;
+}
+.profile-img {
+  width: 25rem;
+  height: 33rem;
+  border-radius: 50%;
+  padding: 0rem;
+  text-align: center;
+  object-fit: cover;
+}
+
+.photo-wrap {
+  display: block;
+  text-align: center;
+  height: 10rem;
+}
+
+.text-about{
+  margin: 0 auto;
+  text-align: center;
+  width: 50rem;
+  height: 10rem;
+  line-height: 3rem;
+  color: var(--valentino);
+  margin-top: 7rem;
+  margin-bottom: 8rem;
+  font-size: 2rem;
+  
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.5rem;
+}
+
+.retangle{
+  width: 25rem;
+  height: 35rem;
+  background: val(--regal-blue);
+  border-radius: 5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.aboutme {
+  margin: 0 auto;
+  padding-top: 25rem;
+  width: 25rem;
+  text-align: center;
+  align-items: center;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration:none;
+}
+
+.profile-name {
+  color: black; 
+  margin-bottom: 2rem;
+  width: 13rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: none;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2rem;
+
+}
+
+
+.profile-social a{
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: none;
+  font-weight: normal;
+  line-height: 1.5rem;
+  
+  font-size: 2rem;
+  text-decoration:none;
+  &:hover{
+    color: var(--regal-blue);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgb(233,236,239);
+  }
+}
+
+
+
+// *********************************************
+//    #######   RESPONSIVIDADE   #######
+// *********************************************
+@media (max-width: 600px) {
+  .cards {
+    max-width: 560px;
+    margin: 0 auto 3rem;
+  }
+
+  .retangle{
+    margin: 0 auto 3rem;
+  }
+
+  .aboutme{
+    text-align: center;
+  }
+
+  .text-about{
+    width: 35rem;
+  }
+
+  .profile-name,
+  .profile-social{
+    margin: 0 auto ;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .cards {
+    grid-gap: 3rem;
+    margin: 0 auto 3rem;
+  }
+
+  .text-about{
+    width: 40rem;
+  }
+
+  .retangle{
+    margin: 0 3.5rem 3rem;
+    width: 25rem;
+  }
+  .profile-img{
+    margin: 0 3.5rem 3rem;
+    grid-gap: 3rem;
+  }
+  .aboutme{
+    text-align: center;
+    width: 25rem;
+  }
+
+  .profile-name,
+  .profile-social{
+    margin: 0 auto ;
+    margin-bottom: 1.5rem;
+  }
+  
+}
+
+@media (min-aspect-ratio: 1025px) {
+  .cards {
+    min-width: 1500px;
+    grid-gap: 5rem;
+    margin: 0 auto 5rem;
+  }
+
+  .retangle{
+    margin: 0 auto 5rem;
+    width: 25rem;
+  }
+  .profile-img{
+    margin: 0 auto 5rem;
+    grid-gap: 5rem;
+  }
+  .aboutme{
+    text-align: center;
+    width: 25rem;
+    margin: 0 auto;
+  }
+  .profile-name
+  .profile-social{
+    text-align: center;
+    width: 25rem;
+    text-decoration:none;
+  }
+}

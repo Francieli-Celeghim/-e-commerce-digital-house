@@ -1,0 +1,60 @@
+#header{
+    background-color: var(--regal-blue) !important;
+    z-index: 2;
+   #home{
+       display:flex;
+       //background-color: red;
+
+       
+    .menu{
+        display:flex;
+        flex: 1 1 100%;
+        padding-left: 4%;
+        justify-content: right;
+        //background-color: green;
+
+        .items{
+            font-size:1.7rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            //background-color: aqua;
+            
+    .nav-link {
+        //flex: 0 1 auto;
+       text-decoration: none;
+       align-items: center;
+       //background-color: blue;
+        padding:5px 15px;
+        border-radius: 5px;
+        color: var( --cloudy);
+        &:hover{
+            color: black;
+            background-color: var(--bg-2);
+        }
+
+        
+    } 
+             
+        }
+    }
+
+    padding: 0 20px;
+    .nav-brand {
+        padding-left: 2%;
+      
+    }
+
+    img {
+        margin-top: 4px;
+        border-radius: 50%;
+        margin-bottom:7px;
+    }
+   
+   }
+
+
+}
+
+
+
